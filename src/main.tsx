@@ -8,8 +8,6 @@ const characters: Record<string, Character> = await fetch('/GirlsDirectory_en.js
   r.json()
 );
 
-window.x = characters
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App characters={characters} />
